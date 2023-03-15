@@ -1,1 +1,1 @@
-172.16.136.166 ansible_ssh_user=dhruv1 ansible_ssh_git password=242152
+172.16.136.166 ansible_ssh_user=dhruv1 ansible_ssh_password=242152
