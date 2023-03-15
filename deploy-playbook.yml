@@ -6,14 +6,14 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: dhruvgupta/calculator-using-devops
+        name: dhruvgupta121/calculator-using-devops
         tag: latest
         source: pull
 
     - name: Create & Start Calculator Docker Container
       docker_container:
         name: calculator-using-devops
-        image: dhruvgupta/calculator-using-devops
+        image: dhruvgupta121/calculator-using-devops
         state: started
         tty: yes
         interactive: yes
