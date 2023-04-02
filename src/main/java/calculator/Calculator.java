@@ -8,11 +8,7 @@ import org.apache.logging.log4j.Logger;
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
 
-    public Calculator() {
-        //Hello world
-        //hello test
-        //hello
-        //hello
+    public Calculator(){
     }
 
     public static void main(String[] args) {
