@@ -2,6 +2,8 @@ pipeline {
     // Declare variables that will be used by the later stages
     environment {
         imageName = ""
+//          DOCKERHUB_REGISTRY = "dhruvgupta121/calculator-using-devops"
+//          DOCKERHUB_CREDENTIALS = credentials('dockerhub-id')
     }
 
     // The "agent" section configures on which nodes the pipeline can be
@@ -34,6 +36,7 @@ pipeline {
 		}
 
 
+
 		stage('Push Docker Image to Docker Hub'){
 		    steps{
 		        script{
@@ -43,6 +46,15 @@ pipeline {
 		        }
 		    }
 		}
+
+
+			  stage('Removing Docker Image from Local') {
+                            steps {
+                                sh "docker rmi dhruvgupta121/calculator-using-devops:latest"
+                            }
+                        }
+
+
 
 //         // Ansible Deploy to remote server (managed host)
         stage('Ansible Deploy') {
