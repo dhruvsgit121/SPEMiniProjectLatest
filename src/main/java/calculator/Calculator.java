@@ -9,7 +9,7 @@ public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     public Calculator(){
-        hello
+        //hello
     }
 
     public static void main(String[] args) {
